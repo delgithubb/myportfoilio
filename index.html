@@ -1,1 +1,41 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        a {color: black;
+        font-size: large;
+        }
+        h1 {font-family: 'Comic Sans MS';}
+        button {background-color: aqua;
+                font-size: large;
+                border-width: 0;
+                }
+    </style>
+    <script>
+        function ChangeLink(){
+            var counter = 2
+            if (counter%2===0){
+                var clink =document.getElementById("link")
+                clink.href = 'https://google.com'
+            }
+            else{
+                var clink =document.getElementById("link")
+                clink.href = 'https://youtube.com'
+            }
+            var counter = counter+1
+
+
+        }
+    </script>
+    <title>David Odukomaiya - Portfolio</title>
+</head>
+<body>
+    <h1>This is the header, it looks very cool</h1>
+    <a id='link' href="https://youtube.com">Click me to go to youtube</a>
+    <div> 
+        <button type="button" onclick="ChangeLink()">Change Link</button>
+    </div>
+</body>
+</html>
